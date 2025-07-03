@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <script src="wavejs/src/wave.js"></script>
+    <title>My Page</title>
+</head>
+<body>
+    <nav>
+        <ul class="navigation">
+            <li class="nav_item" id="nav_home">
+                <a href="#hero_section">Home</a>
+            </li>
+            <li class="nav_item" id="nav_about">
+                <a href="#about_section">About Me</a>
+            </li>
+            <li class="nav_item" id="nav_skills">
+                <a href="#skills_section">My Skills</a>
+            </li>
+            <li class="nav_item" id="nav_my_projects">
+                <a href="#projects_section">My Projects</a>
+            </li>
+            <li class="nav_item" id="nav_contact">
+                <a href="#contact_section">Contact Me</a>
+            </li>
+            <li class="language_select">
+                <div class="language_dropdown">
+                    <button class="dropdown_button" style="transform: translateY(.2rem);">
+                        <img src="languages/Flag_of_the_United_Kingdom.png" alt="" style="width: 3rem;">
+                    </button>
+                    <div class="dropdown_content">
+                        <ul class="dropdown_list">
+                            <li>
+                                <img src="" alt="">
+                            </li>
+                            <li>
+                                <img src="" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <section class="page_section" id="hero_section">
+        <div class="hero_canvas" >
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+       
+        </div>
+        <div class="heading">
+            My name is <span id="hero_name">Rodrigo</span>. <br>
+            I enjoy programming and software development
+        </div>
+    </section>
+    <section class="page_section" id="about_section">
+        <h2 class="section_header">About Me</h2>
+        <div class="about_content">
+            <img src="pictures/my_picture.jpg" alt="me" id="profile_picture">
+            <p id="profile_description">
+                Growing up with computers, i've always felt passionate about 
+                technology, which is why i have commited myself to the study of computer sciences.
+                Currently living in Guadalajara, Mexico i am studying a computer science career to
+                pursue my dream of becoming a sofware developer. My passion has always been learning 
+                and finding efficient solutions to interesting problems.
+            </p>
+        </div>
+    </section>
+    <section class="page_section" id="skills_section">
+        <h2 class="section_header">My Skills</h2>
+        <div class="skills">
+            <div class="skills_row">
+                <div class="skills_item">
+                    <img src="logos/cpp-logo.png" alt="" class="skill_logo">
+                    <span class="skill_name">C++</span>
+                </div>
+                <div class="skills_item">
+                    <img src="logos/JavaScript-logo.png" alt="" class="skill_logo">
+                    <span class="skill_name">JavaScript</span>
+                </div>
+            </div>
+            <div class="skills_row">
+                <div class="skills_item">
+                    <img src="logos/python_logo.png" alt="" class="skill_logo">
+                    <span class="skill_name">Python</span>
+                </div>
+                <div class="skills_item">
+                    <img src="logos/Csharp_Logo.png" alt="" class="skill_logo">
+                    <span class="skill_name">C Sharp</span>
+                </div>
+                <div class="skills_item">
+                    <img src="logos/rustacean-flat-noshadow.png" alt="" class="skill_logo">
+                    <span class="skill_name">Rust</span>
+                </div>
+            </div>
+            <div class="skills_row">
+                <div class="skills_item">
+                    <img src="logos/Git-Icon-1788C.png" alt="" class="skill_logo">
+                    <span class="skill_name">Git</span>
+                </div>
+                <div class="skills_item">
+                    <img src="logos/logo-mysql-170x115.png" alt="" class="skill_logo">
+                    <span class="skill_name">MySQL</span>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="page_section" id="projects_section">
+        <h2 class="section_header">My Projects</h2>
+        <div class="projects">
+            <div class="project_item">
+                <img src="pictures/draw_board_ejemplo.PNG" alt="" class="project_preview">
+                <div class="project_info">
+                    <h3 class="project_name">DrawBoard</h3>
+                    <p class="project_desc">A paint-like program that let's you create simple drawings</p>
+                    <div class="tech_stacks">
+                        <span class="stack_item">C#</span>
+                        <span class="stack_item">SkiaSharp</span>
+                        <span class="stack_item">WPF</span>
+                    </div>
+                    <a href="https://github.com/Rodrigo-Lopez-03/DrawBoard" target="_blank" class="project_link">
+                        Preview
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="page_section" id="contact_section">
+        <h2 class="section_header">Contact Me</h2>
+        <div class="contact">
+            <p class="contact_text">Interested in my work? Send me a message and i 
+                will contact you as soon as i am available.</p>
+        </div>
+        
+        <form action="" class="contact_form">
+            <input type="text" name="name" placeholder="Name" id="contact_form-name">
+            <input type="email" name="email" placeholder="Email" id="contact_form-email">
+            <textarea name="" placeholder="Message" id="contact_form-message"></textarea>
+            <button id="submit_button">Submit</button>
+        </form>
+    </section>
+    <footer class="page_footer">
+        <div class="contact_references">
+            <a href="https://www.linkedin.com/in/rodrigo-alonso-lopez-torres-12a67b341/" class="reference"
+            target="_blank" title="My LinkedIn">
+                <img src="logos/pngimg.com - linkedIn_PNG38.png" alt="" class="ref">       
+            </a>
+            <a href="https://github.com/Rodrigo-Lopez-03" class="reference" 
+            target="_blank" title="My GitHub">
+                <img src="logos/pngimg.com - github_PNG32.png" alt="" class="ref">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
